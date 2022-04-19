@@ -4,10 +4,8 @@ import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
+  AiFillMail,
 } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
 
 function Home2() {
   return (
@@ -19,37 +17,39 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
+              I fell in love with programming when I was 17 and since then I
+              have never stopped learning 🚀.
               <br />
-              <br />I am fluent in classics like
+              <br />I work with
               <i>
-                <b className="purple"> C++, Javascript and Python. </b>
+                <b className="purple"> MERN Stack & Android Development </b>
               </i>
+              , but I am currently learning Typescript, NextJs, and other cool
+              technologies 😎.
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
+              Although I work in the area of &nbsp;
               <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Deep Learning and Natural Launguage Processing.
-                </b>
-              </i>
+                <b className="purple">Web and Mobile App Development </b>, I
+                love the field of &nbsp;
+                <b className="purple">Artificial Intelligence</b>, although I
+                still don't know how to build them 
+              </i> 😅.
               <br />
-              <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
+              <br />I also love linux, its customization and the automation of
+              small repetitive tasks using technologies like &nbsp;
+              <b className="purple">bash, docker</b> and &nbsp;
               <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
+                <b className="purple">python</b>
               </i>
-              &nbsp; like
+              . In the future I would love to learn more about
               <i>
-                <b className="purple"> React.js and Next.js</b>
-              </i>
+                <b className="purple"> cybersecurity</b>
+              </i>{" "}
+              🛡️ and
+              <i>
+                <b className="purple"> artificial intelligence</b> 
+              </i> 🤖.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -67,7 +67,7 @@ function Home2() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/soumyajit4419"
+                  href="https://github.com/SwaXTech"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -77,32 +77,12 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/Soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiOutlineTwitter />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <FaLinkedinIn />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.instagram.com/s.o.u.m.y.a_j.i.t/"
+                  href="mailto:aleeherasimiuk@gmail.com"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
                 >
-                  <AiFillInstagram />
+                  <AiFillMail />
                 </a>
               </li>
             </ul>
