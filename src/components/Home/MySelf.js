@@ -7,7 +7,7 @@ import {
   AiFillMail,
 } from "react-icons/ai";
 
-function Home2() {
+function MySelf() {
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
@@ -92,4 +92,4 @@ function Home2() {
     </Container>
   );
 }
-export default Home2;
+export default MySelf;
