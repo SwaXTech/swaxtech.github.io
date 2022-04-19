@@ -1,33 +1,30 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import {
-  SiAndroidstudio, SiDocker, SiGithubactions, SiJetbrains, SiLinux,
-  SiVisualstudiocode
+  DiHaskell, DiRuby
+} from "react-icons/di";
+import {
+  SiKotlin, SiScala
 } from "react-icons/si";
 
-function Toolstack() {
+function CoolTechs() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <SiLinux />
+        <SiScala />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiVisualstudiocode />
+        <SiKotlin />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiJetbrains />
+        <DiRuby />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiGithubactions />
+        <DiHaskell/>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiDocker />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiAndroidstudio />
-      </Col>
+
     </Row>
   );
 }
 
-export default Toolstack;
+export default CoolTechs;

@@ -6,6 +6,8 @@ import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
+import CoolTechs from "./CoolTechs";
+import Learning from "./Learning";
 
 function About() {
   return (
@@ -35,7 +37,7 @@ function About() {
           </Col>
         </Row>
         <h1 className="project-heading">
-          Professional <strong className="purple">Skillset </strong>
+          <strong className="purple">Skillset </strong>
         </h1>
 
         <Techstack />
@@ -44,6 +46,16 @@ function About() {
           <strong className="purple">Tools</strong> I use
         </h1>
         <Toolstack />
+
+        <h1 className="project-heading">
+          Other cool <strong className="purple">technologies</strong> I used
+        </h1>
+        <CoolTechs />
+
+        <h1 className="project-heading">
+          Currently <strong className="purple">learning</strong>
+        </h1>
+        <Learning />
 
         <Github />
       </Container>
