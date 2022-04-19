@@ -32,17 +32,18 @@ function MySelf() {
               <i>
                 <b className="purple">Web and Mobile App Development </b>, I
                 love the field of &nbsp;
-                <b className="purple">Artificial Intelligence</b>, although I
-                still don't know how to build them 
-              </i> 😅.
+                <b className="purple">Artificial Intelligence</b>
+              </i>, although I
+                still don't know how to build them yet 😅.
               <br />
               <br />I also love linux, its customization and the automation of
               small repetitive tasks using technologies like &nbsp;
               <b className="purple">bash, docker</b> and &nbsp;
               <i>
                 <b className="purple">python</b>
-              </i>
-              . In the future I would love to learn more about
+              </i>.
+              <br /><br />
+               In the future I would love to learn more about
               <i>
                 <b className="purple"> cybersecurity</b>
               </i>{" "}
