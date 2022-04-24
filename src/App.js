@@ -15,6 +15,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Guides from "./components/Guides/Guides";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -38,6 +39,8 @@ function App() {
           <Route path="/project" element={<Projects />} />
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
+          <Route path="/guides/arch" element={<Guides path="https://raw.githubusercontent.com/SwaXTech/Guia-de-Instalacion-de-Arch-Linux/main"/>} />
+          <Route path="/guides/docker" element={<Guides path="https://raw.githubusercontent.com/SwaXTech/Docker-Guide/main"/>} />
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
       </div>

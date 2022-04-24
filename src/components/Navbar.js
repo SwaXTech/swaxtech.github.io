@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavDropdown } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
@@ -70,6 +71,23 @@ function NavBar() {
                 <AiOutlineUser style={{ marginBottom: "2px" }} /> About
               </Nav.Link>
             </Nav.Item>
+
+            <NavDropdown title="Guides">
+              <NavDropdown.Item 
+                as={Link}
+                to="/guides/arch"
+                onClick={() => updateExpanded(false)}
+              >
+                Arch Linux
+              </NavDropdown.Item>
+              <NavDropdown.Item 
+                as={Link}
+                to="/guides/docker"
+                onClick={() => updateExpanded(false)}
+              >
+                Docker
+              </NavDropdown.Item>
+            </NavDropdown>
 
             {/* <Nav.Item>
               <Nav.Link
