@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { Container, ProgressBar, Spinner } from "react-bootstrap";
+import { Container, Spinner } from "react-bootstrap";
 import Particle from "../Particle";
 import ReactMarkdown from 'react-markdown'
 import rehypeRaw from 'rehype-raw'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 import rehypeSlug from 'rehype-slug'
+import {Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
+import {a11yDark} from 'react-syntax-highlighter/dist/esm/styles/prism'
 
 function Guides({path}) {
 
@@ -25,7 +27,7 @@ function Guides({path}) {
     ).then(
       text => setMd(text)
     ).finally(() => setLoading(false));
-  }, []);
+  }, [path]);
 
   return (
     <section>
@@ -51,14 +53,29 @@ function Guides({path}) {
 
             />
           </div>
-          :
-          <ReactMarkdown
-            rehypePlugins={[rehypeRaw, rehypeSlug,rehypeAutolinkHeadings]}
-            className="markdown-body"
-
-          >
-            {md}
-          </ReactMarkdown>}
+          :<ReactMarkdown
+          className="markdown-body"
+          rehypePlugins={[rehypeRaw, rehypeSlug,rehypeAutolinkHeadings]}
+          children={md}
+          components={{
+            code({node, inline, className, children, ...props}) {
+              const match = /language-(\w+)/.exec(className || '')
+              return !inline && match ? (
+                <SyntaxHighlighter
+                  children={String(children).replace(/\n$/, '')}
+                  style={a11yDark}
+                  language={match[1]}
+                  PreTag="div"
+                  {...props}
+                />
+              ) : (
+                <code className={className} {...props}>
+                  {children}
+                </code>
+              )
+            }
+          }}
+        />}
         </Container>
       </Container>
     </section>
