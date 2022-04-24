@@ -752,3 +752,6 @@ button:focus {
 .markdown-body a{
   color: white !important;
 }
+.markdown-body img{
+  width: -webkit-fill-available !important;
+}
