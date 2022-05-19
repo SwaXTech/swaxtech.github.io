@@ -42,7 +42,7 @@ function NavBar() {
               color: "#cd5ef6",
             }}
           >
-            Alee
+            Alee Herasimiuk
           </h3>
         </Navbar.Brand>
         <Navbar.Toggle

@@ -28,7 +28,7 @@ function MySelf() {
               technologies 😎.
               <br />
               <br />
-              Although I work in the area of &nbsp;
+              I work in the area of &nbsp;
               <i>
                 <b className="purple">Web and Mobile App Development </b>, I
                 love the field of &nbsp;
