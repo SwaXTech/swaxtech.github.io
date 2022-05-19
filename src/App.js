@@ -4,7 +4,6 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
-import Resume from "./components/Resume/ResumeNew";
 import {
   BrowserRouter as Router,
   Route,
@@ -38,7 +37,6 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/about" element={<About />} />
-          <Route path="/resume" element={<Resume />} />
           <Route path="/guides/arch" element={<Guides path="https://raw.githubusercontent.com/SwaXTech/Guia-de-Instalacion-de-Arch-Linux/main"/>} />
           <Route path="/guides/docker" element={<Guides path="https://raw.githubusercontent.com/SwaXTech/Docker-Guide/main"/>} />
           <Route path="*" element={<Navigate to="/"/>} />
