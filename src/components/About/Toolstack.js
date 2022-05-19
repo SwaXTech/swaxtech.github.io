@@ -4,28 +4,29 @@ import {
   SiAndroidstudio, SiDocker, SiGithubactions, SiJetbrains, SiLinux,
   SiVisualstudiocode
 } from "react-icons/si";
+import { Tech } from "./utils";
 
 function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
+      <Tech name="Linux">
         <SiLinux />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      </Tech>
+      <Tech name="Visual Studio Code">
         <SiVisualstudiocode />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      </Tech>
+      <Tech name="JetBrains">
         <SiJetbrains />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      </Tech>
+      <Tech name="Github Actions">
         <SiGithubactions />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      </Tech>
+      <Tech name="Docker">
         <SiDocker />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      </Tech>
+      <Tech name="Android Studio">
         <SiAndroidstudio />
-      </Col>
+      </Tech>
     </Row>
   );
 }

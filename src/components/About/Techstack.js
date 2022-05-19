@@ -10,55 +10,56 @@ import {
   SiGitlab, SiGnubash, SiGooglecloud,
   SiMysql
 } from "react-icons/si";
+import { Tech } from "./utils";
 
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
+      <Tech name="C++">
         <CgCPlusPlus />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      </Tech>
+      <Tech name="JavaScript">
         <DiJavascript1 />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      </Tech>
+      <Tech name="NodeJS">
         <DiNodejs />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      </Tech>
+      <Tech name="React">
         <DiReact />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      </Tech>
+      <Tech name="MongoDB">
         <DiMongodb />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      </Tech>
+      <Tech name="Express JS">
         <SiExpress />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      </Tech>
+      <Tech name="Git">
         <DiGit />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      </Tech>
+      <Tech name="Google Cloud">
         <SiGooglecloud />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      </Tech>
+      <Tech name="Python">
         <DiPython />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      </Tech>
+      <Tech name="MySQL">
         <SiMysql />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      </Tech>
+      <Tech name="Java">
         <DiJava />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      </Tech>
+      <Tech name="Android">
         <DiAndroid />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      </Tech>
+      <Tech name="Bash">
         <SiGnubash/>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      </Tech>
+      <Tech name="Github">
         <SiGithub/>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      </Tech>
+      <Tech name="Gitlab">
         <SiGitlab/>
-      </Col>
+      </Tech>
     </Row>
   );
 }
