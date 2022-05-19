@@ -752,6 +752,9 @@ button:focus {
 .markdown-body a{
   color: white !important;
 }
-.markdown-body img{
-  width: -webkit-fill-available !important;
+
+@media screen and (max-width: 1000px) {
+  .markdown-body img {
+    width: -webkit-fill-available !important;
+  }
 }

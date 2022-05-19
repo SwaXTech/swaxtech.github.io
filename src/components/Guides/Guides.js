@@ -21,7 +21,6 @@ function Guides({path}) {
       text => {
         const regex = /img\/(.+)/g;
         const replaced = text.replace(regex, `${path}/img/$1`);
-        console.log(replaced);
         return replaced;
       }
     ).then(
