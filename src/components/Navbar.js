@@ -6,6 +6,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import {
   AiFillStar,
+  AiOutlineFundProjectionScreen,
   AiOutlineHome, AiOutlineUser
 } from "react-icons/ai";
 import { CgGitFork } from "react-icons/cg";
@@ -72,6 +73,19 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/projects"
+                onClick={() => updateExpanded(false)}
+              >
+                <AiOutlineFundProjectionScreen
+                  style={{ marginBottom: "2px" }}
+                />{" "}
+                Projects
+              </Nav.Link>
+            </Nav.Item>
+
             <NavDropdown title="Guides">
               <NavDropdown.Item 
                 as={Link}
@@ -89,18 +103,8 @@ function NavBar() {
               </NavDropdown.Item>
             </NavDropdown>
 
-            {/* <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/project"
-                onClick={() => updateExpanded(false)}
-              >
-                <AiOutlineFundProjectionScreen
-                  style={{ marginBottom: "2px" }}
-                />{" "}
-                Projects
-              </Nav.Link>
-            </Nav.Item>
+            
+            {/* 
 
             <Nav.Item>
               <Nav.Link

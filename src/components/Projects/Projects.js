@@ -1,13 +1,11 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import ProjectCard from "./ProjectCards";
+import { Col, Container, Row } from "react-bootstrap";
+import delibird from "../../Assets/Projects/delibird.webp";
+import nlp from "../../Assets/Projects/nlp.webp";
+import rdp from "../../Assets/Projects/rdp.png";
+import tadp from "../../Assets/Projects/scala.png";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.jpeg";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import ProjectCard from "./ProjectCards";
 
 function Projects() {
   return (
@@ -23,62 +21,41 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={rdp}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              link="https://github.com/soumyajit4419/Chatify"
+              title="Rescate de Patitas"
+              description="Rescate de patitas is an academic web project. You can register your pet and we will send you a QR Code to put in pet's collar. In case the pet is lost, the rescuer can contact you through our website by scanning the QR Code. This project was made using Java, Spark, Hibernate/JPA, MariaDB and Docker, following the main aspects of Object Oriented Programming and using various Desing Patterns, testing and deployed on an AWS instance."
+              link="https://github.com/SwaXTech/RescateDePatitas"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={tadp}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              link="https://github.com/soumyajit4419/Bits-0f-C0de"
+              title="Técnicas Avanzadas de Programación"
+              description="In the TADP project I learned how to solve the most typical inheritance problems with the use of Mixins and Traits, as well as I learned how to use Metaprogramming, in this case, to implement an aspect-oriented programming framework. I also learned how to mix the object paradigm with the functional paradigm and other cool things like monads and variance. We used metaprogramming to simulate an Aspect Oriented Paradigm framework on Ruby, and simulated a game of dungeons with doors that should be opened by different types of characters in Scala."
+              link="https://github.com/SwaXTech/TecnicasAvanzadasDeProgramacion"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={delibird}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              link="https://github.com/soumyajit4419/Editor.io"
+              title="Delibird"
+              description="Delibird is an Operating Systems project, in which we learned how to make a shared library, create a communication protocol, manage memory to avoid memory leaks, create a cache using Ram Memory concepts such as Dynamic/Fixed Partitioning and Buddy System, as well as memory compaction and the concepts of internal and external fragmentation. On the other hand, thread synchronization is implemented using schedulers such as SJF, Round Robin and FIFO, and finally an implementation of a File System to be able to persist data."
+              link="https://github.com/SwaXTech/Delibird-Sistemas-Operativos"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={nlp}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              link="https://github.com/soumyajit4419/Plant_AI"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              link="https://github.com/soumyajit4419/AI_For_Social_Good"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              link="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
+              title="Detector de Plagio"
+              description="This is a plagiarism detector, in which I learned how to classify texts according to the topic, as well as how to identify those proper names that could potentially be the author of the work. I also learned how to preprocess texts and finally how to compare paragraphs and sentences to obtain their semantic closeness and detect possible plagiarism."
+              link="https://github.com/SwaXTech/Detector-de-Plagio"
             />
           </Col>
         </Row>
